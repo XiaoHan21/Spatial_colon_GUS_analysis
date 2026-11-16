@@ -125,9 +125,9 @@ python s02.generate_spatial_matrix.py \
 
 ### Step 3 · Analysis and visualisation — `s03.SpatialDataAnalysis_Visualisation.ipynb`
 
-An R notebook (R v4.4.3) that loads the matrices from Step 2 together with tissue images and spot metadata, classifies spots into **G1** (mucus-associated) and **G2** (lumen-associated) groups based on their distance to the host epithelial boundary, and generates **Extended Data Fig. 4a–d**.
+An R notebook (R v4.4.3) that loads the matrices from Step 2 together with spot metadata, classifies spots into **G1** (mucus-associated) and **G2** (lumen-associated) groups based on their distance to the host epithelial boundary, and generates **Extended Data Fig. 4a–d**.
 
-- **Input:** `<GUS matrices from Step 2>`, `<H&E images>`, `<spot-to-host distance / Seurat objects>`
+- **Input:** `<GUS matrices from Step 2>`, `Seurat objects>`
 - **Output:** Extended Data Fig. 4a–d (PDF)
 
 Statistical tests: Wilcoxon rank-sum test (panel a) and Pearson's chi-squared test (panel b).
@@ -137,16 +137,6 @@ Statistical tests: Wilcoxon rank-sum test (panel a) and Pearson's chi-squared te
 ## Data availability
 
 The supporting data are available from the contact below upon reasonable request.
-
-## Citation
-
-If you use this code, please cite:
-
-> `<Authors>. <Title>. Nature (<year>). <DOI>`
-
-## License
-
-`<e.g. MIT License — see LICENSE for details>`
 
 ## Contact
 

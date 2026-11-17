@@ -1,10 +1,10 @@
 # Spatial_colon_GUS_analysis
 
-Code for the spatial transcriptomic analysis of mouse colon tissue presented in **Extended Data Fig. 4** of the *Nature* manuscript.
+Code for the spatial transcriptomic analysis of mouse colon tissue presented in **Extended Data Fig. 3** of the *Nature* manuscript.
 
-> **Extended Data Fig. 4 | Spatial transcriptomic analysis of mouse colon tissue revealed that genes encoding PGE2-Acyl-GlcA–processing GUS enzymes were enriched in the mucus-associated region.**
+> **Extended Data Fig. 3 | Spatial transcriptomic analysis of mouse colon tissue revealed that genes encoding PGE2-Acyl-GlcA–processing GUS enzymes were enriched in the mucus-associated region.**
 
-Germ-free (GF) C57BL/6 mice were orally gavaged with a complex stool-derived microbial community prepared from SPF C57BL/6 donor mice. After 4 weeks, once the gut microbiota had stabilized, colon tissues were collected for spatial transcriptomic analysis (Stereo-seq). This repository contains the pipeline used to map microbial reads to GUS genes, build spot-level GUS expression matrices, and generate Extended Data Fig. 4a–d.
+Germ-free (GF) C57BL/6 mice were orally gavaged with a complex stool-derived microbial community prepared from SPF C57BL/6 donor mice. After 4 weeks, once the gut microbiota had stabilized, colon tissues were collected for spatial transcriptomic analysis (Stereo-seq). This repository contains the pipeline used to map microbial reads to GUS genes, build spot-level GUS expression matrices, and generate Extended Data Fig. 3a–d.
 
 ---
 
@@ -31,7 +31,7 @@ Germ-free (GF) C57BL/6 mice were orally gavaged with a complex stool-derived mic
         s02.generate_spatial_matrix.py   UMI-deduplicated spot × GUS gene matrix (CSV)
                          │
                          ▼
-        s03.SpatialDataAnalysis_Visualisation.ipynb   Analysis & plotting → Extended Data Fig. 4a–d
+        s03.SpatialDataAnalysis_Visualisation.ipynb   Analysis & plotting → Extended Data Fig. 3a–d
 ```
 
 ## Repository structure
@@ -125,10 +125,10 @@ python s02.generate_spatial_matrix.py \
 
 ### Step 3 · Analysis and visualisation — `s03.SpatialDataAnalysis_Visualisation.ipynb`
 
-An R notebook (R v4.4.3) that loads the matrices from Step 2 together with spot metadata, classifies spots into **G1** (mucus-associated) and **G2** (lumen-associated) groups based on their distance to the host epithelial boundary, and generates **Extended Data Fig. 4a–d**.
+An R notebook (R v4.4.3) that loads the matrices from Step 2 together with spot metadata, classifies spots into **G1** (mucus-associated) and **G2** (lumen-associated) groups based on their distance to the host epithelial boundary, and generates **Extended Data Fig. 3a–d**.
 
 - **Input:** `<GUS matrices from Step 2>`, `Seurat objects>`
-- **Output:** Extended Data Fig. 4a–d (PDF)
+- **Output:** Extended Data Fig. 3a–d (PDF)
 
 Statistical tests: Wilcoxon rank-sum test (panel a) and Pearson's chi-squared test (panel b).
 

@@ -137,7 +137,7 @@ Statistical tests: Wilcoxon rank-sum test (panel a) and Pearson's chi-squared te
 
 ## Data availability
 
-The supporting data are available from the contact below upon reasonable request.
+The supporting data are available on Zenodo (DOI: 10.5281/zenodo.24333034). Further details are available from the contact below upon reasonable request.
 
 ## Contact
 

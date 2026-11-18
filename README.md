@@ -1,6 +1,6 @@
 # Spatial_colon_GUS_analysis
 
-Code for the spatial transcriptomic analysis of mouse colon tissue presented in **Extended Data Fig. 3** of the *Nature* manuscript, entitled "*Gut Microbiota Mediate the Metabolism of
+Code for the spatial transcriptomic analysis of mouse colon tissue presented in **Extended Data Fig. 3** of the *Nature* article, entitled "*Gut Microbiota Mediate the Metabolism of
 Colonic Prostaglandins*".
 
 > **Extended Data Fig. 3 | Spatial transcriptomic analysis of mouse colon tissue revealed that genes encoding PGE2-Acyl-GlcA–processing GUS enzymes were enriched in the mucus-associated region.**
